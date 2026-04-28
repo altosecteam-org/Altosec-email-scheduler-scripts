@@ -34,7 +34,7 @@
 #   ACME_CONTACT_EMAIL  Let's Encrypt contact email
 #   RUNNER_ROOT       Runner install path (default /opt/actions-runner-email-scheduler)
 #   ALTOSEC_EMAIL_DEPLOY_DIR  Deploy directory (default /opt/altosec-deploy-email)
-#   REPO_URL          GitHub repo URL (default https://github.com/alto-sec/Altosec-email-scheduler)
+#   REPO_URL          GitHub repo URL (default https://github.com/altosecteam-org/Altosec-email-scheduler)
 
 set -euo pipefail
 
@@ -67,7 +67,7 @@ require_root
 # ── defaults ──────────────────────────────────────────────────────────────────
 RUNNER_ROOT="${RUNNER_ROOT:-/opt/actions-runner-email-scheduler}"
 DEPLOY_DIR="${ALTOSEC_EMAIL_DEPLOY_DIR:-/opt/altosec-deploy-email}"
-REPO_URL="${REPO_URL:-https://github.com/alto-sec/Altosec-email-scheduler}"
+REPO_URL="${REPO_URL:-https://github.com/altosecteam-org/Altosec-email-scheduler}"
 RUNNER_SVC_USER="root"
 
 # ── interactive prompts ───────────────────────────────────────────────────────

@@ -97,7 +97,7 @@ Write-Host "Machine env: ALTOSEC_EMAIL_DEPLOY_DIR=$($DeployDir.Trim())  ALTOSEC_
 # ── 6. Run Linux bootstrap inside WSL2 Ubuntu ────────────────────────────────
 Write-Host ''
 Write-Host 'Launching Linux bootstrap inside WSL2 Ubuntu...'
-wsl -d $ubuntuDistro -u root -- bash -c "curl -fsSL https://raw.githubusercontent.com/alto-sec/Altosec-email-scheduler-scripts/main/linux/bootstrap-email-scheduler-runner.sh | bash"
+wsl -d $ubuntuDistro -u root -- bash -c "curl -fsSL https://raw.githubusercontent.com/altosecteam-org/Altosec-email-scheduler-scripts/main/linux/bootstrap-email-scheduler-runner.sh | bash"
 
 # ── 7. Remove any leftover Task Scheduler watchdog from previous installs ─────
 $taskName = 'AltosecEmailSchedulerRunner'
